@@ -1,16 +1,28 @@
-# finance_app
+# 💰 Finance App
 
-A new Flutter project.
+Aplicação mobile desenvolvida com o objetivo de **controlar as finanças pessoais**, permitindo melhor organização e visualização dos gastos e rendimentos.
 
-## Getting Started
+Este projeto foi criado para fins de **estudo e prática com Flutter**, unindo conceitos de design e desenvolvimento mobile.
 
-This project is a starting point for a Flutter application.
+## 🛠️ Tecnologias Utilizadas
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter
+- Dart
+- Figma (para design da interface)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🎨 Design no Figma
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+A interface do Finance App foi desenhada no Figma e está disponível no link abaixo:
+
+🔗 [Acesse o Figma](https://www.figma.com/design/vQzApZhqZFDFp1td5K4asQ/Financy-App?node-id=0-1&p=f)
+
+## 👩‍💻 Desenvolvido por
+
+**Maria Samahá**  
+Estudante e desenvolvedora apaixonada por tecnologia, design e soluções inteligentes para o dia a dia.
+
+📎 [LinkedIn](https://www.linkedin.com/in/mariasamahaa/)
+
+---
+
+Este projeto é parte do meu processo de aprendizado em Flutter e serve como base para futuros aprimoramentos e integrações com bancos de dados e APIs externas.
