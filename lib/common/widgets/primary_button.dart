@@ -1,6 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:finance_app/common/constants/app_colors.dart';
 import 'package:finance_app/common/constants/app_text_styles.dart';
-import 'package:flutter/material.dart';
 
 class PrimaryButton extends StatelessWidget {
   final VoidCallback? onPressed;
@@ -8,35 +8,38 @@ class PrimaryButton extends StatelessWidget {
 
   const PrimaryButton({
     super.key,
-    this.onPressed,
+    required this.onPressed,
     required this.text,
   });
 
-  final BorderRadius _borderRadius = const BorderRadius.all(
-    Radius.circular(16.0),
-  );
-
   @override
   Widget build(BuildContext context) {
-    return Ink(
-      height: 40,
+    return Container(
+      height: 48,
+      width: double.infinity,
       decoration: BoxDecoration(
-        borderRadius: _borderRadius,
         gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
           colors: onPressed != null
               ? AppColors.greenGradient
               : AppColors.greyGradient,
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
         ),
+        borderRadius: BorderRadius.circular(16),
       ),
-      child: InkWell(
-        borderRadius: _borderRadius,
-        onTap: onPressed,
-        child: Align(
-          child: Text(
-            text,
-            style: AppTextStyles.mediumText18.copyWith(color: AppColors.white),
+      child: Material(
+        color: Colors.transparent,
+        borderRadius: BorderRadius.circular(16),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(16),
+          onTap: onPressed,
+          child: Center(
+            child: Text(
+              text,
+              style: AppTextStyles.mediumText18.copyWith(
+                color: AppColors.white,
+              ),
+            ),
           ),
         ),
       ),
