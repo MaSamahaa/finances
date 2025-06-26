@@ -14,30 +14,33 @@ class PrimaryButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 48,
-      width: double.infinity,
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: onPressed != null
-              ? AppColors.greenGradient
-              : AppColors.greyGradient,
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-        ),
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: Material(
-        color: Colors.transparent,
-        borderRadius: BorderRadius.circular(16),
-        child: InkWell(
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+          horizontal: 45), // ajuste aqui conforme quiser
+      child: Container(
+        height: 48,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: onPressed != null
+                ? AppColors.greenGradient
+                : AppColors.greyGradient,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
           borderRadius: BorderRadius.circular(16),
-          onTap: onPressed,
-          child: Center(
-            child: Text(
-              text,
-              style: AppTextStyles.mediumText18.copyWith(
-                color: AppColors.white,
+        ),
+        child: Material(
+          color: Colors.transparent,
+          borderRadius: BorderRadius.circular(16),
+          child: InkWell(
+            borderRadius: BorderRadius.circular(16),
+            onTap: onPressed,
+            child: Center(
+              child: Text(
+                text,
+                style: AppTextStyles.mediumText18.copyWith(
+                  color: AppColors.white,
+                ),
               ),
             ),
           ),

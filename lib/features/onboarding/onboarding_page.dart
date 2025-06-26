@@ -26,6 +26,9 @@ class OnboardingPage extends StatelessWidget {
             style: AppTextStyles.mediumText
                 .copyWith(color: AppColors.greenlightTwo),
           ),
+          const SizedBox(
+            height: 10,
+          ),
           Padding(
             padding: const EdgeInsets.only(
               left: 24.0,
@@ -37,9 +40,6 @@ class OnboardingPage extends StatelessWidget {
               text: 'Começar agora',
               onPressed: () {},
             ),
-          ),
-          const SizedBox(
-            height: 20,
           ),
           CustomTextButton(
             onpressed: () {},

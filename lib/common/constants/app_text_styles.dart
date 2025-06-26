@@ -1,3 +1,4 @@
+import 'package:finance_app/common/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class AppTextStyles {
@@ -9,21 +10,28 @@ class AppTextStyles {
     fontWeight: FontWeight.w700,
   );
 
-    static const TextStyle mediumText = TextStyle(
+  static const TextStyle mediumText = TextStyle(
     fontFamily: 'Inter',
     fontSize: 25.0,
     fontWeight: FontWeight.w700,
   );
 
-      static const TextStyle mediumText18 = TextStyle(
+  static const TextStyle mediumText18 = TextStyle(
     fontFamily: 'Inter',
     fontSize: 18.0,
     fontWeight: FontWeight.w600,
   );
 
-    static const TextStyle smallText = TextStyle(
+  static const TextStyle smallText = TextStyle(
     fontFamily: 'Inter',
     fontSize: 14.0,
     fontWeight: FontWeight.w500,
+  );
+
+  static const TextStyle inputLabelText = TextStyle(
+    fontFamily: 'Inter',
+    fontSize: 14.0,
+    fontWeight: FontWeight.w400,
+    color: AppColors.darkGrey,
   );
 }

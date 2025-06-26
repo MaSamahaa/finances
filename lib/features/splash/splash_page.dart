@@ -9,19 +9,20 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        alignment: Alignment.center,
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: AppColors.greenGradient,
+          alignment: Alignment.center,
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: AppColors.greenGradient,
+            ),
           ),
-        ),
-        child:  Text(
-          'Finance',
-          style: AppTextStyles.bigText.copyWith(color: AppColors.white),
-        ),
-      ),
+          child: SizedBox(
+            child: Image.asset(
+              'assets/images/logo_branca.png',
+              height: 150,
+            ),
+          )),
     );
   }
 }
