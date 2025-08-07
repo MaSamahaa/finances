@@ -25,13 +25,6 @@ class Validator {
     return null;
   }
 
-  static String? validateConfirmPassword(String? first, String? second) {
-    if (first != second) {
-      return ("As senhas são diferentes. Tente novamente.");
-    }
-    return null;
-  }
-
   static String? validatePassword(String? value) {
     final condition = RegExp(r'^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$');
     if (value != null && value.isEmpty) {
@@ -39,6 +32,13 @@ class Validator {
     }
     if (value != null && !condition.hasMatch(value)) {
       return ('Formato de senha inválido.');
+    }
+    return null;
+  }
+
+  static String? validateConfirmPassword(String? first, String? second) {
+    if (first != second) {
+      return ("As senhas são diferentes. Tente novamente.");
     }
     return null;
   }
