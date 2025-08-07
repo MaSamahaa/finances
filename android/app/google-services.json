@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "347523040695",
+    "project_id": "finace-2d25e",
+    "storage_bucket": "finace-2d25e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347523040695:android:41ef91a5ed3fab268a9432",
+        "android_client_info": {
+          "package_name": "dev.maria.finance.finance_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxLdv_uZ69gqtVpDGTsRtIW4HPxqhgfec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
